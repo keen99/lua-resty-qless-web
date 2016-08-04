@@ -47,7 +47,7 @@ location /web {
         local resty_qless = require "resty.qless"
         local qless, err = resty_qless.new(
             {
-                redis = { host = "127.0.0.1", port = 6379 }
+                host = "127.0.0.1", port = 6379
             },
             { database = 1 }
         )
